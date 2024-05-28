@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link  rel="stylesheet" type="text/css" href="Task5.css">
+        
+        <title>Validation Form</title>
+    </head>
+    <body>
+        
+        <form  id="myForm" > 
+            <h1>Registration Form!</h1> 
+            <label >Name:</label>  
+            <input  id="name" type="name" placeholder="Enter your name" >   
+            <span id="errorMessageName" class="errorMessage"></span>     <br> <br>
+
+            <label >Email:</label> 
+            <input id="email" type="name" placeholder="Enter your email">      
+            <span id="errorMessageEmail" class="errorMessage"></span>   <br> <br>
+
+            <label >Password:</label> 
+            <input id="password" type="name" placeholder="Enter your password">      
+            <span id="errorMessagePassword" class="errorMessage"></span>  <br> <br>
+
+            <label >Confirm Password:</label> 
+            <input id="confirmPassword" type="name" placeholder="Enter your password">     
+            <span id="errorMessageConfirmPassword" class="errorMessage"></span>     <br> <br> 
+
+             <label >Contact number:</label> 
+            <input id="contactNo" type="name" placeholder="Enter your contact number">  
+            <span id="errorMessageContactNo" class="errorMessage"></span>        <br> <br> 
+
+            <span id="gender" >Gender:
+            
+            <input id="male" name="gender" type="radio" value="Male"> 
+            <label for="male" >Male</label>         
+
+            <input id="female" name="gender" type="radio" value="Female">  
+            <label for="female" >Female</label> 
+
+            <input id="others" name="gender" type="radio" value="Others"> 
+            <label for="others" >Others</label> </span>  
+            <span id="errorMessageGender" class="errorMessage"></span>     <br> <br>
+ 
+            <span >  <label for="country">Country:</label>
+            <select id="country" name="country" onchange="stateSelection()">
+            <option value="">Select country</option>
+            <option value="India">India</option>
+            <option  value="America" >America</option>
+            <option  value="Canada" >Canada</option>
+            <option  value="Others" >Others</option></select>  </span>
+            <span id="errorMessageCountry" class="errorMessage"></span>    <br>
+
+             <span id="stateShow" class="stateHide" >  <label for="state">State:</label>
+                <select id="state" name="state" onchange="citySelection()">
+                <option value="">Select state</option>
+                </select> 
+                <span id="errorMessageState" class="errorMessage"></span> 
+             </span>  
+             <br> 
+
+                <span id="cityShow" class="cityHide">  <label for="city">City:</label>
+                    <select id="city" name="city">
+                    <option value="">Select city</option>
+                    </select>
+                    <span id="errorMessageCity" class="errorMessage"></span>  
+                </span>   
+                 <br> 
+
+                <div><span id="errorMessageImage" class="errorMessage"></span>
+             <label for="image">Image:</label>   
+             <input type="file" id="image" name="image"  accept="image/*" onchange="previewImage()"> 
+             
+              <br><br>
+            <div id="imgPreviewShow" class="imgPreviewHide">
+                <img id="imgPreview" src="" >  
+                  <br><br>
+            </div>
+            </div>
+            
+           
+
+            <input  type="submit" value="Submit" >
+        
+        </form>
+          <div id="tableShow" class="tableHide">
+            <h2>Form Data!</h2>
+            <table id="dataTable">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Password</th>
+                        <th>Contact No.</th>
+                        <th>Gender</th>
+                        <th>Country</th>
+                        <th>State</th>
+                        <th>City</th>
+                        <th>Image</th>
+                        <th>Buttons</th>
+                    </tr>
+                </thead>
+                <tbody id="tableBody">
+                </tbody>
+            </table>
+        
+         </div> 
+ 
+        <script src="Task5.js"></script>
+    </body>
+</html>

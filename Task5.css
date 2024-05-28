@@ -1,0 +1,71 @@
+body{
+    background-color: rgb(212, 225, 229);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+form{
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;   
+    padding: 20px; 
+    border-radius: 10px; 
+    max-width: 600px; 
+    margin: 0 auto; 
+}
+.errorMessage{
+    color: red;
+}
+.stateHide{
+    display: none;
+}
+.cityHide{
+    display:none;
+}
+.imgPreviewHide{
+    display:none;
+}
+#imgPreviewShow img{
+    height: 100px;
+    width: 100px;
+}
+table {
+    width: 100%;
+    border-collapse: collapse; 
+}
+table, th, td {
+    border: 1px solid black; 
+}
+th, td {
+    padding: 8px;
+    text-align: left;
+}
+img{
+    height:100px;
+    width:100px;
+}
+.edit-button {
+    background-color: #4CAF50;
+    color: white;
+}
+.delete-button {
+    background-color: #f44336;
+    color: white;
+}
+.tableHide{
+    display:none;
+}
+#tableShow{
+   border-radius: 10px;
+   border: 1px solid black; 
+   border-style:dotted;
+   background-color:#fff8ed;
+   margin-top: 2em;
+   padding: 1.5em;
+}
+
+
+
+
+
